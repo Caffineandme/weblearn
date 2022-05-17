@@ -2,20 +2,36 @@
 <html lang="en">
   <meta charset="utf-8" />
   <head>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="prism.css" />
   </head>
   <title>Learning the front end</title>
 
   <body>
-    <a href="index.html">Home</a>
-    <a href="css.html">CSS</a>
-    <a href="js.html">Java Script</a>
+    <div id="navlinks">
+      <a href="index.html">Home</a>
+      <a href="html.html">HTML</a>
+      <a href="js.html">Java Script</a>
+    </div>
+    <br />
+
+    CSS code for link styles
+    <pre><code class="language-css"><script type="prism-css"></script>#navlinks a:link, 
+#navlinks a:visited, 
+#navlinks a:hover { 
+    background-color: #3639f4;
+ color: #DDDDDD; 
+ text-decoration: none; 
+ padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+} </script></code></pre>
     <br />
     <br />
     <br />
     <br />
     <p>html p tag (paragraph) example with code</p>
-    <pre><code class="language-markup">&lt;p> html p tag (paragraph) example with code&lt;/p></code></pre>
+    <pre><code class="language-markup"><script type="prism-html-markup"><p> html p tag (paragraph) example with code</p></script></code></pre>
     <br />
     <br />
     <br />
@@ -33,8 +49,45 @@
     <br />
     <br />
     <br />
-    <h1>h1 header example</h1>
-    <pre><code class="language-markup"><script type="prism-html-markup"><h1>h1 header example</h1></script></code></pre>
+    <img id="lens1"
+      src="images/lens.jpeg"
+      alt="view through camera lens"
+      width="200"
+      height="200"
+    />
+    <p>html image edited with css border radius 50px</p>
+    <pre><code class="language-css"><script type="prism-css">#lens1 {
+        border-radius: 50px;
+        padding: 20px;
+        width: 200px;
+        height: 150px;  
+    }</script></code></pre>
+    <br />
+    <br />
+    <br />
+    <br />
+    <img id="lens2"
+    src="images/lens.jpeg"
+    alt="view through camera lens"
+    width="200"
+    height="200"
+  />
+  <p>html image edited with css border radius 200px</p>
+  <pre><code class="language-css"><script type="prism-css">#lens1 {
+      border-radius: 50px;
+      padding: 20px;
+      width: 200px;
+      height: 200px;  
+  }</script></code></pre>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>h1 header example styled in css. Inconsolata font</h1>
+    <pre><code class="language-css"><script type="prism-css">h1 {
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    }</script></code></pre>
     <br />
     <br />
     <br />
@@ -51,9 +104,9 @@
     <br />
     <br />
 
-    <p>Inserting a URL link</p>
-    <a href="https://www.google.com/"> Link to google</a>
-    <pre><code class="language-markup"><script type="prism-html-markup"> <a href="https://www.google.com/"> Link to google</a></script></code></pre>
+        <p>Inserting a URL link</p>
+            <a id="googlink" href="https://www.google.com/"> Link to google</a>
+            <pre><code class="language-markup"><script type="prism-html-markup"> <a href="https://www.google.com/"> Link to google</a></script></code></pre>
     <br />
     <br />
     <br />

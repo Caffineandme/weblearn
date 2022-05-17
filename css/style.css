@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(8, 2, 65);
+  }
+
+#navlinks a:link, 
+#navlinks a:visited, 
+#navlinks a:hover { 
+    background-color: #3639f4;
+ color: #DDDDDD; 
+ text-decoration: none; 
+ padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+} 
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+  font: 1.3rem Inconsolata, monospace;
+}
+
+#lens1 {
+    border-radius: 50px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;  
+
+}
+
+#lens2 {
+    border-radius: 200px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;   
+}
+
+
+
+#googlink a {
+    background:-moz-radial-gradient(left, #ffffff 24%, #cba334 88%);
+    transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear; /* Firefox 4 */
+    -webkit-transition: background 0.5s linear; /* Safari and Chrome */
+    -o-transition: background 0.5s linear; /* Opera */
+    -ms-transition: background 0.5s linear; /* Explorer 10 */
+}
+#googlink  a:hover {
+    background:-moz-radial-gradient(left, #cba334 24%, #ffffff 88%);
+}
