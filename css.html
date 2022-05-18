@@ -4,6 +4,11 @@
   <head>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="prism.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+
+
   </head>
   <title>Learning the front end</title>
 
@@ -13,7 +18,9 @@
       <a href="html.html">HTML</a>
       <a href="js.html">Java Script</a>
     </div>
+  
     <br />
+
 
     CSS code for link styles
     <pre><code class="language-css"><script type="prism-css"></script>#navlinks a:link, 
@@ -28,14 +35,21 @@
 } </script></code></pre>
     <br />
     <br />
+    <hr class="lines">
     <br />
     <br />
-    <p>html p tag (paragraph) example with code</p>
-    <pre><code class="language-markup"><script type="prism-html-markup"><p> html p tag (paragraph) example with code</p></script></code></pre>
+    <p>html p tag (paragraph) example with css edit</p>
+    <pre><code class="language-css"><script type="prism-css">p {
+      color: black;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 30px;
+    }</script></code></pre>
     <br />
     <br />
     <br />
     <br />
+
+    
 
     <img
       src="images/lens.jpeg"
@@ -79,19 +93,22 @@
       width: 200px;
       height: 200px;  
   }</script></code></pre>
-    <br />
-    <br />
-    <br />
-    <br />
+  <br />
+  <br />
+  <hr class="lines">
+  <br />
+  <br />
     <h1>h1 header example styled in css. Inconsolata font</h1>
     <pre><code class="language-css"><script type="prism-css">h1 {
     color: white;
     font: 1.3rem Inconsolata, monospace;
     }</script></code></pre>
-    <br />
-    <br />
-    <br />
-    <br />
+       <br />
+       <br />
+       <br />
+       <hr class="lines">
+       <br />
+       <br />
 
     <p>The breaks above inserted using the br tag</p>
     <pre><code class="language-markup"><script type="prism-html-markup">
@@ -99,27 +116,69 @@
       <br />
       <br />
       <br /></script></code></pre>
-    <br />
-    <br />
-    <br />
-    <br />
+      <br />
+      <br />
+      <hr class="lines">
+      <br />
+      <br />
 
         <p>Inserting a URL link</p>
+        <div id="googlink">
             <a id="googlink" href="https://www.google.com/"> Link to google</a>
-            <pre><code class="language-markup"><script type="prism-html-markup"> <a href="https://www.google.com/"> Link to google</a></script></code></pre>
-    <br />
-    <br />
-    <br />
-    <br />
+            <br />
+            <br />
+            <pre><code class="language-css"><script type="prism-css"> #googlink a:link,
+              a:visited {
+                color: blue;
+                font-size: 20px;
+                text-decoration: underline;
+                text-align: left;
+                padding: 10px 10px;
+                display: inline;
+                position: relative;
+                transition: all 0.3s ease;
+                border-style: solid;
+                color: blue;
+              }
+            #googlink a:hover,
+              a:active {
+                color: blue;
+                background-color: rgb(255, 255, 255);
+              }
+            #googlink a:hover::before {
+                right: 0;
+                left: 0;
+              }</script></code></pre>
+          </div>
+          <br />
+          <br />
+          <hr class="lines">
+          <br />
+          <br />
     <p>a div tag with a style applied box for visual representation</p>
-    <div style="width: 500px; height: 100px; border: 1px solid #000">
-      This is a div
+    <div id="divbox">
+      <div id="divtext">This is a div</div> 
     </div>
-    <pre><code class="language-markup"><script type="prism-html-markup"> <div style="width: 500px; height: 100px; border: 1px solid #000">
-      This is a div
-    </div></script></code></pre>
+    <pre><code class="language-css"><script type="prism-css"> #divbox {
+      background-color: darkblue;
+      color: aliceblue;
+      border-radius: 25px;
+    
+      border: 2px solid #000000;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    }
+    
+    #divtext {
+      font-size: 30px;
+      text-align: center;
+      width: 100%;
+      height: 30%;
+    }</script></code></pre>
     <br />
     <br />
+    <hr class="lines">
     <br />
     <br />
     <p>Span tag. Used to wrap inline elements for styling</p>
@@ -128,6 +187,7 @@
 
     <br />
     <br />
+    <hr class="lines">
     <br />
     <br />
     <p>Embedding youtube video with iframe</p>
@@ -141,20 +201,22 @@
 
     <br />
     <br />
+    <hr class="lines">
     <br />
     <br />
     <p>create a form that can collect input to backend</p>
-    <form action="/input data" method="post"></form>
+    <form action="/input data" method="post"></form> 
     <p>What is your first name?</p>
-    <input type="text" />
+    <input type="text" />&nbsp&nbsp<button type="submit">submit</button>
     <pre><code class="language-markup"><script type="prism-html-markup"> <form action="/input data" method="post"></form>
       <p>What is your first name?</p>
       <input type="text" /></script></code></pre>
 
-    <br />
-    <br />
-    <br />
-    <br />
+      <br />
+      <br />
+      <hr class="lines">
+      <br />
+      <br />
     <p>Yes or no?</p>
     Note: the "name=" must be the same if only one radio button is to be
     selected
@@ -166,10 +228,11 @@
     <pre><code class="language-markup"><script type="prism-html-markup">Yes <input type="radio" name="answer" />
       <br />
 No <input type="radio" name="answer" /></script></code></pre>
-    <br />
-    <br />
-    <br />
-    <br />
+<br />
+<br />
+<hr class="lines">
+<br />
+<br />
     <p>
       Selection from dropdown box. Note: whatever text is in the quotes is what
       will be sent to the server
@@ -187,6 +250,7 @@ No <input type="radio" name="answer" /></script></code></pre>
     </select></script></code></pre>
     <br />
     <br />
+    <hr class="lines">
     <br />
     <br />
     Adjustable text area
@@ -195,6 +259,7 @@ No <input type="radio" name="answer" /></script></code></pre>
     <pre><code class="language-markup"><script type="prism-html-markup"><textarea></textarea></script></code></pre>
     <br />
     <br />
+    <hr class="lines">
     <br />
     <br />
     Check boxes: check all that apply
@@ -217,6 +282,11 @@ No <input type="radio" name="answer" /></script></code></pre>
       <br />
       Crypto
       <input type="checkbox" /></script></code></pre>
+      <br />
+      <br />
+      <hr class="lines">
+      <br />
+     
 
     <script src="prism.js"></script>
   </body>
