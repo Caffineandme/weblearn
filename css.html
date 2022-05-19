@@ -2,13 +2,13 @@
 <html lang="en">
   <meta charset="utf-8" />
   <head>
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="css/navbar.css" />  
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="prism.css" />
+    <link rel="stylesheet" href="css/prism.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
-<script src="script.js" defer></script>
+<script src="js/navbar.js" defer></script>
 
 
   </head>
@@ -26,7 +26,7 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
+          <li><a href="">CSS</a></li>
           <li><a href="#">Javascript</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
@@ -37,23 +37,164 @@
     <br />
 
 
-    CSS code for link styles
-    <pre><code class="language-css"><script type="prism-css"></script>#navlinks a:link, 
-#navlinks a:visited, 
-#navlinks a:hover { 
-    background-color: #3639f4;
- color: #DDDDDD; 
- text-decoration: none; 
- padding: 14px 25px;
-  text-align: center;
-  display: inline-block;
-} </script></code></pre>
+    <div class="sectionText"><h2>CSS code for navbar style</h2></div>
+    <pre><code class="language-css"><script type="prism-css"></script>* {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+    }
+    
+    .brand-title {
+      font-size: 1.5rem;
+      margin: 0.5rem;
+    }
+    
+    .navbar-links {
+      height: 100%;
+    }
+    
+    .navbar-links ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar-links li {
+      list-style: none;
+    }
+    
+    .navbar-links li a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+      background-color: #555;
+    }
+    
+    .toggle-button {
+      position: absolute;
+      top: 0.75rem;
+      right: 1rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+    }
+    
+    .toggle-button .bar {
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+    }
+    
+    @media (max-width: 800px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .toggle-button {
+        display: flex;
+      }
+    
+      .navbar-links {
+        display: none;
+        width: 100%;
+      }
+    
+      .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+      }
+    
+      .navbar-links ul li {
+        text-align: center;
+      }
+    
+      .navbar-links ul li a {
+        padding: 0.5rem 1rem;
+      }
+    
+      .navbar-links.active {
+        display: flex;
+      }
+    }
+    
+    /* Background Styles Only */
+    
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,500&display=swap");
+    
+    * {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1rem;
+    }
+    
+    html {
+      background-color: #dfdfdf;
+    }
+    
+    .side-links {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+    }
+    
+    .side-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      margin-bottom: 10px;
+      color: white;
+      width: 180px;
+      padding: 10px 0;
+      border-radius: 10px;
+    }
+    
+    .side-link-youtube {
+      background-color: red;
+    }
+    
+    .side-link-twitter {
+      background-color: #1da1f2;
+    }
+    
+    .side-link-github {
+      background-color: #6e5494;
+    }
+    
+    .side-link-text {
+      margin-left: 10px;
+      font-size: 18px;
+    }
+    
+    .side-link-icon {
+      color: white;
+      font-size: 30px;
+    }</script></code></pre>
     <br />
     <br />
     <hr class="lines">
     <br />
     <br />
-    <p>html p tag (paragraph) example with css edit</p>
+    <div class="sectionText"><h2>html p tag (paragraph) example with css edit</h2></div>
     <pre><code class="language-css"><script type="prism-css">p {
       color: black;
       font-family: "Ubuntu", sans-serif;
@@ -61,22 +202,22 @@
     }</script></code></pre>
     <br />
     <br />
+    <hr class="lines">
     <br />
+    <div class="sectionText"><h2>html image insert</h2></div>
     <br />
-
-    
-
-    <img
+    <img id="lens0"
       src="images/lens.jpeg"
       alt="view through camera lens"
       width="200"
       height="200"
     />
-    <p>html image insert</p>
+    <br />
     <pre><code class="language-markup"><script type="prism-html-markup"><img src="images/lens.jpeg" alt="camera lens"></script></code></pre>
     <br />
     <br />
     <br />
+    <div class="sectionText"><h2>html image edited with css border radius 50px</h2></div>
     <br />
     <img id="lens1"
       src="images/lens.jpeg"
@@ -84,7 +225,7 @@
       width="200"
       height="200"
     />
-    <p>html image edited with css border radius 50px</p>
+    
     <pre><code class="language-css"><script type="prism-css">#lens1 {
         border-radius: 50px;
         padding: 20px;
@@ -92,16 +233,15 @@
         height: 150px;  
     }</script></code></pre>
     <br />
-    <br />
-    <br />
-    <br />
+    <div class="sectionText"><h2>html image edited with css border radius 200px</h2></div>
+    
     <img id="lens2"
     src="images/lens.jpeg"
     alt="view through camera lens"
     width="200"
     height="200"
   />
-  <p>html image edited with css border radius 200px</p>
+  
   <pre><code class="language-css"><script type="prism-css">#lens1 {
       border-radius: 50px;
       padding: 20px;
@@ -125,7 +265,7 @@
        <br />
        <br />
 
-    <p>The breaks above inserted using the br tag</p>
+    <h2>The breaks above inserted using the br tag</h2>
     <pre><code class="language-markup"><script type="prism-html-markup">
       <br />
       <br />
@@ -137,7 +277,7 @@
       <br />
       <br />
 
-        <p>Inserting a URL link</p>
+        <h2>Inserting a URL link</h2>
         <div id="googlink">
             <a id="googlink" href="https://www.google.com/"> Link to google</a>
             <br />
@@ -170,7 +310,7 @@
           <hr class="lines">
           <br />
           <br />
-    <p>a div tag with a style applied box for visual representation</p>
+    <h2>a div tag with a style applied box for visual representation</h2>
     <div id="divbox">
       <div id="divtext">This is a div</div> 
     </div>
@@ -196,16 +336,16 @@
     <hr class="lines">
     <br />
     <br />
-    <p>Span tag. Used to wrap inline elements for styling</p>
-    <p>My name <span style="color: blue">Jeff</span></p>
-    <pre><code class="language-markup"><script type="prism-html-markup"> <p>My name <span style="color: blue">Jeff</span></p></script></code></pre>
+    <h2>Span tag. Used to wrap inline elements for styling</h2>
+    <h2>My name <span style="color: blue">Jeff</span></h2>
+    <pre><code class="language-markup"><script type="prism-html-markup"> <h2>My name <span style="color: blue">Jeff</span></h2></script></code></pre>
 
     <br />
     <br />
     <hr class="lines">
     <br />
     <br />
-    <p>Embedding youtube video with iframe</p>
+    <h2>Embedding youtube video with iframe</h2>
     <iframe
       src="https://www.youtube.com/embed/tv6bxtCjqDI"
       width="560"
@@ -219,12 +359,12 @@
     <hr class="lines">
     <br />
     <br />
-    <p>create a form that can collect input to backend</p>
+    <h2>create a form that can collect input to backend</h2>
     <form action="/input data" method="post"></form> 
-    <p>What is your first name?</p>
+    <h2>What is your first name?</h2>
     <input type="text" />&nbsp&nbsp<button type="submit">submit</button>
     <pre><code class="language-markup"><script type="prism-html-markup"> <form action="/input data" method="post"></form>
-      <p>What is your first name?</p>
+      <h2>What is your first name?</h2>
       <input type="text" /></script></code></pre>
 
       <br />
@@ -232,7 +372,7 @@
       <hr class="lines">
       <br />
       <br />
-    <p>Yes or no?</p>
+    <h2>Yes or no?</h2>
     Note: the "name=" must be the same if only one radio button is to be
     selected
     <br />
@@ -248,10 +388,10 @@ No <input type="radio" name="answer" /></script></code></pre>
 <hr class="lines">
 <br />
 <br />
-    <p>
+    <h2>
       Selection from dropdown box. Note: whatever text is in the quotes is what
       will be sent to the server
-    </p>
+    </h2>
     What's for lunch?
     <select>
       <option value=""></option>
@@ -303,6 +443,6 @@ No <input type="radio" name="answer" /></script></code></pre>
       <br />
      
 
-    <script src="prism.js"></script>
+    <script src="js/prism.js"></script>
   </body>
 </html>
