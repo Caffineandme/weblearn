@@ -1,17 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weblearn</title>
-  </head>
-  <body>
-    <h1>This is the landing page on the weblearn journey.</h1>
-    <br />
-    <p>Click the following links on what you want to put in your brain today</p>
-    <a href="html.html">HTML</a>
-    <a href="css.html">CSS</a>
-    <a href="js.html">Java Script</a>
-  </body>
+	<meta charset="utf-8" />
+	<head>
+		<link rel="stylesheet" href="css/navbar.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/prism.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="js/navbar.js" defer></script>
+	</head>
+	<title>Learning the front end</title>
+
+	<body>
+		<nav class="navbar">
+			<div class="brand-title">Weblearn</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="navbar-links">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">HTML</a></li>
+					<li><a href="">CSS</a></li>
+					<li><a href="#">Javascript</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<br />
+
+		<section class="sections">
+			<a href="navtree.html"
+				><h2>CSS code for navbar style</h2>
+				<img src="images/code.jpg" alt="code on screen"
+			/></a>
+		</section>
+
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		<div class="sectionText">
+			<h2>html p tag (paragraph) example with css edit</h2>
+		</div>
+		<pre><code class="language-css"><script type="prism-css">p {
+      color: black;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 30px;
+    }</script></code></pre>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<div class="sectionText"><h2>html image insert</h2></div>
+		<br />
+		<img
+			id="lens0"
+			src="images/lens.jpeg"
+			alt="view through camera lens"
+			width="200"
+			height="200"
+		/>
+		<br />
+		<pre><code class="language-markup"><script type="prism-html-markup"><img src="images/lens.jpeg" alt="camera lens"></script></code></pre>
+		<br />
+		<br />
+		<br />
+		<div class="sectionText">
+			<h2>html image edited with css border radius 50px</h2>
+		</div>
+		<br />
+		<img
+			id="lens1"
+			src="images/lens.jpeg"
+			alt="view through camera lens"
+			width="200"
+			height="200"
+		/>
+
+		<pre><code class="language-css"><script type="prism-css">#lens1 {
+        border-radius: 50px;
+        padding: 20px;
+        width: 200px;
+        height: 150px;  
+    }</script></code></pre>
+		<br />
+		<div class="sectionText">
+			<h2>html image edited with css border radius 200px</h2>
+		</div>
+
+		<img
+			id="lens2"
+			src="images/lens.jpeg"
+			alt="view through camera lens"
+			width="200"
+			height="200"
+		/>
+
+		<pre><code class="language-css"><script type="prism-css">#lens1 {
+      border-radius: 50px;
+      padding: 20px;
+      width: 200px;
+      height: 200px;  
+  }</script></code></pre>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		<div class="sectionText">
+			<h1>h1 header example styled in css. Inconsolata font</h1>
+		</div>
+		<pre><code class="language-css"><script type="prism-css">h1 {
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    }</script></code></pre>
+		<br />
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+
+		<h2>The breaks above inserted using the br tag</h2>
+		<pre><code class="language-markup"><script type="prism-html-markup">
+      <br />
+      <br />
+      <br />
+      <br /></script></code></pre>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+
+		<h2>Inserting a URL link</h2>
+		<div id="googlink">
+			<a id="googlink" href="https://www.google.com/"> Link to google</a>
+			<br />
+			<br />
+			<pre><code class="language-css"><script type="prism-css"> #googlink a:link,
+              a:visited {
+                color: blue;
+                font-size: 20px;
+                text-decoration: underline;
+                text-align: left;
+                padding: 10px 10px;
+                display: inline;
+                position: relative;
+                transition: all 0.3s ease;
+                border-style: solid;
+                color: blue;
+              }
+            #googlink a:hover,
+              a:active {
+                color: blue;
+                background-color: rgb(255, 255, 255);
+              }
+            #googlink a:hover::before {
+                right: 0;
+                left: 0;
+              }</script></code></pre>
+		</div>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		<h2>a div tag with a style applied box for visual representation</h2>
+		<div id="divbox">
+			<div id="divtext">This is a div</div>
+		</div>
+		<pre><code class="language-css"><script type="prism-css"> #divbox {
+      background-color: darkblue;
+      color: aliceblue;
+      border-radius: 25px;
+    
+      border: 2px solid #000000;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    }
+    
+    #divtext {
+      font-size: 30px;
+      text-align: center;
+      width: 100%;
+      height: 30%;
+    }</script></code></pre>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		<h2>Span tag. Used to wrap inline elements for styling</h2>
+		<h2>My name <span style="color: blue">Jeff</span></h2>
+		<pre><code class="language-markup"><script type="prism-html-markup"> <h2>My name <span style="color: blue">Jeff</span></h2></script></code></pre>
+
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		<h2>Embedding youtube video with iframe</h2>
+		<iframe
+			src="https://www.youtube.com/embed/tv6bxtCjqDI"
+			width="560"
+			height="315"
+			frameborder="0"
+		></iframe>
+		<pre><code class="language-markup"><script type="prism-html-markup"> <iframe src="https://www.youtube.com/embed/tv6bxtCjqDI" width="560" height="315" frameborder="0"></iframe></script></code></pre>
+
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		<h2>create a form that can collect input to backend</h2>
+		<form action="/input data" method="post"></form>
+		<h2>What is your first name?</h2>
+		<input type="text" />&nbsp&nbsp<button type="submit">submit</button>
+		<pre><code class="language-markup"><script type="prism-html-markup"> <form action="/input data" method="post"></form>
+      <h2>What is your first name?</h2>
+      <input type="text" /></script></code></pre>
+
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		<h2>Yes or no?</h2>
+		Note: the "name=" must be the same if only one radio button is to be
+		selected
+		<br />
+
+		Yes <input type="radio" name="answer" />
+		<br />
+		No <input type="radio" name="answer" />
+		<pre><code class="language-markup"><script type="prism-html-markup">Yes <input type="radio" name="answer" />
+      <br />
+No <input type="radio" name="answer" /></script></code></pre>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		<h2>
+			Selection from dropdown box. Note: whatever text is in the quotes is what
+			will be sent to the server
+		</h2>
+		What's for lunch?
+		<select>
+			<option value=""></option>
+			<option value="Hotdogs">Hotdogs</option>
+			<option value="Cheeseburgers">Cheeseburgers</option>
+		</select>
+		<pre><code class="language-markup"><script type="prism-html-markup"> <select>
+      <option value=""></option>
+      <option value="Hotdogs">Hotdogs</option>
+      <option value="Cheeseburgers">Cheeseburgers</option>
+    </select></script></code></pre>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		Adjustable text area
+		<br />
+		<textarea></textarea>
+		<pre><code class="language-markup"><script type="prism-html-markup"><textarea></textarea></script></code></pre>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+		<br />
+		Check boxes: check all that apply
+		<br />
+		Stocks
+		<input type="checkbox" />
+		<br />
+		Bonds
+		<input type="checkbox" />
+		<br />
+		Crypto
+		<input type="checkbox" />
+		<pre><code class="language-markup"><script type="prism-html-markup">Check boxes: check all that apply
+      <br />
+      Stocks
+      <input type="checkbox" />
+      <br />
+      Bonds
+      <input type="checkbox" />
+      <br />
+      Crypto
+      <input type="checkbox" /></script></code></pre>
+		<br />
+		<br />
+		<hr class="lines" />
+		<br />
+
+		<script src="js/prism.js"></script>
+	</body>
 </html>
